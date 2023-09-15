@@ -1,0 +1,300 @@
+.heroContainer {
+  //   min-height: 80vh;
+  display: flex;
+  justify-content: center;
+
+  .outerContainer {
+    position: relative;
+    // border: 1px solid yellow;
+    min-height: 82vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    .item1 {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    .item2 {
+      position: absolute;
+      right: -4.2rem;
+      top: -6.6rem;
+      transform: scale(0.6);
+    }
+    .item3 {
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+    }
+    .item4 {
+      position: absolute;
+      right: 0px;
+      bottom: -15.3rem;
+    }
+    .innerContainer {
+      // border: 1px solid red;
+      height: 58vh;
+      width: 60vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .cash {
+        position: absolute;
+        text-transform: uppercase;
+        color: var(--white);
+        z-index: 10;
+        font-size: 15rem;
+        font-family: var(--Robota);
+        font-weight: 900;
+        top: 0px;
+      }
+      .mobile {
+        position: absolute;
+        z-index: 20;
+        transform: scale(0.5) rotate(25deg);
+      }
+      .app {
+        position: absolute;
+        text-transform: uppercase;
+        color: var(--white);
+        z-index: 30;
+        font-size: 15rem;
+        font-family: var(--Robota);
+        font-weight: 700;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+//for small device
+@media screen and (max-width: 576px) {
+  .heroContainer {
+    display: flex;
+    justify-content: center;
+
+    .outerContainer {
+      position: relative;
+      // border: 1px solid yellow;
+      min-height: 82vh;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      .item1 {
+        position: absolute;
+        left: -2rem;
+        top: -1rem;
+        transform: scale(0.5);
+      }
+      .item2 {
+        position: absolute;
+        right: -9.2rem;
+        top: -11.6rem;
+        transform: scale(0.5);
+      }
+      .item3 {
+        position: absolute;
+        right: 25rem;
+        bottom: -6rem;
+        transform: scale(0.5);
+      }
+      .item4 {
+        position: absolute;
+        left: 0rem;
+        bottom: -18rem;
+        transform: scale(0.5);
+      }
+      .innerContainer {
+        // border: 1px solid red;
+        height: 58vh;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .cash {
+          position: absolute;
+          text-transform: uppercase;
+          color: var(--white);
+          z-index: 10;
+          font-size: 8rem;
+          font-family: var(--Robota);
+          font-weight: 900;
+          top: 5rem;
+        }
+        .mobile {
+          position: absolute;
+          z-index: 20;
+          transform: scale(0.3) rotate(25deg);
+        }
+        .app {
+          position: absolute;
+          text-transform: uppercase;
+          color: var(--white);
+          z-index: 30;
+          font-size: 8rem;
+          font-family: var(--Robota);
+          font-weight: 700;
+          bottom: 8rem;
+        }
+      }
+    }
+  }
+}
+//for medium device
+@media (min-width: 576px) and (max-width: 776px) {
+  .heroContainer {
+    display: flex;
+    justify-content: center;
+
+    .outerContainer {
+      position: relative;
+      // border: 1px solid yellow;
+      min-height: 82vh;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      .item1 {
+        position: absolute;
+        left: -3rem;
+        top: -3rem;
+        transform: scale(0.5);
+      }
+      .item2 {
+        position: absolute;
+        right: -9.2rem;
+        top: -9.6rem;
+        transform: scale(0.5);
+      }
+      .item3 {
+        position: absolute;
+        left: -7rem;
+        bottom: -6rem;
+        transform: scale(0.6);
+      }
+      .item4 {
+        position: absolute;
+        left: 12rem;
+        bottom: -18rem;
+        transform: scale(0.6);
+      }
+      .innerContainer {
+        // border: 1px solid red;
+        height: 58vh;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .cash {
+          position: absolute;
+          text-transform: uppercase;
+          color: var(--white);
+          z-index: 10;
+          font-size: 12rem;
+          font-family: var(--Robota);
+          font-weight: 900;
+          top: 3rem;
+        }
+        .mobile {
+          position: absolute;
+          z-index: 20;
+          transform: scale(0.5) rotate(25deg);
+        }
+        .app {
+          position: absolute;
+          text-transform: uppercase;
+          color: var(--white);
+          z-index: 30;
+          font-size: 12rem;
+          font-family: var(--Robota);
+          font-weight: 700;
+          bottom: 3rem;
+        }
+      }
+    }
+  }
+}
+//for large device
+@media (min-width: 776px) and (max-width: 1024px) {
+  .heroContainer {
+    display: flex;
+    justify-content: center;
+
+    .outerContainer {
+      position: relative;
+      // border: 1px solid yellow;
+      min-height: 82vh;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      .item1 {
+        position: absolute;
+        left: -2rem;
+        top: -1rem;
+        transform: scale(0.6);
+      }
+      .item2 {
+        position: absolute;
+        right: -9.2rem;
+        top: -9.6rem;
+        transform: scale(0.7);
+      }
+      .item3 {
+        position: absolute;
+        left: -5rem;
+        bottom: -4rem;
+        transform: scale(0.8);
+      }
+      .item4 {
+        position: absolute;
+        right: -7rem;
+        bottom: -18rem;
+        transform: scale(0.8);
+      }
+      .innerContainer {
+        // border: 1px solid red;
+        height: 58vh;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .cash {
+          position: absolute;
+          text-transform: uppercase;
+          color: var(--white);
+          z-index: 10;
+          font-size: 15rem;
+          font-family: var(--Robota);
+          font-weight: 900;
+          top: 0rem;
+        }
+        .mobile {
+          position: absolute;
+          z-index: 20;
+          transform: scale(0.5) rotate(25deg);
+        }
+        .app {
+          position: absolute;
+          text-transform: uppercase;
+          color: var(--white);
+          z-index: 30;
+          font-size: 15rem;
+          font-family: var(--Robota);
+          font-weight: 700;
+          bottom: 0rem;
+        }
+      }
+    }
+  }
+}

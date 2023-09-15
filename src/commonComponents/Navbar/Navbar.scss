@@ -1,0 +1,121 @@
+.navbarContainer {
+  .navMenu {
+    display: flex;
+    ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-family: "Roboto Condensed";
+      color: white;
+      li {
+        list-style-type: none;
+      }
+    }
+  }
+}
+
+//for small screens
+@media screen and (max-width: 576px) {
+  .navbarContainer {
+    .navMenu {
+      position: relative;
+      width: 58vw;
+      .showMenu {
+        display: block;
+      }
+      .hideMenu {
+        display: none;
+      }
+      ul {
+        position: absolute;
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-family: var(--robota);
+        color: var(--white);
+        background-color: var(--green);
+        z-index: 50;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        li {
+          list-style-type: none;
+          &:hover {
+            background-color: var(--black);
+          }
+        }
+      }
+    }
+  }
+}
+//for mid screens
+@media (min-width: 576px) and (max-width: 776px) {
+  .navbarContainer {
+    .navMenu {
+      position: relative;
+      width: 72vw;
+      .showMenu {
+        display: block;
+      }
+      .hideMenu {
+        display: none;
+      }
+      ul {
+        position: absolute;
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-family: var(--robota);
+        color: var(--white);
+        background-color: var(--green);
+        z-index: 50;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        li {
+          list-style-type: none;
+          &:hover {
+            background-color: var(--black);
+          }
+        }
+      }
+    }
+  }
+}
+//for large screens
+@media (min-width: 776px) and (max-width: 1024px) {
+  .navbarContainer {
+    .navMenu {
+      position: relative;
+      width: 85vw;
+      .showMenu {
+        display: block;
+      }
+      .hideMenu {
+        display: none;
+      }
+      ul {
+        position: absolute;
+        width: 100%;
+        font-weight: 700;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-family: var(--robota);
+        color: var(--white);
+        background-color: var(--green);
+        z-index: 50;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        li {
+          list-style-type: none;
+          &:hover {
+            background-color: var(--black);
+          }
+        }
+      }
+    }
+  }
+}

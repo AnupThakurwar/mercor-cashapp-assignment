@@ -1,0 +1,10 @@
+.mainContainer {
+  .container {
+    .footerWrapper {
+      position: fixed;
+      bottom: 0.5rem;
+      z-index: 30;
+      padding: 1rem;
+    }
+  }
+}

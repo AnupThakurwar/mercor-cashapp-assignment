@@ -1,0 +1,133 @@
+.footerContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .fa-brands {
+      font-size: 1.5rem;
+      color: var(--green);
+    }
+    button {
+      padding: 1.5rem;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1rem;
+      gap: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: var(--Robota);
+      border: 2px solid var(--white);
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+  .arrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 2rem;
+    color: var(--green);
+    padding: 1rem;
+  }
+  .disclaimerContainer {
+    color: var(--white);
+    font-family: var(--Robota);
+    font-size: 0.8rem;
+  }
+  .socialIconsContainer {
+    color: var(--white);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+//for small screens
+@media screen and (max-width: 576px) {
+  .footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    .buttonContainer {
+      display: block;
+      align-items: center;
+      gap: 1rem;
+      .fa-brands {
+        //no change
+      }
+      button {
+        min-width: 10.5rem;
+        padding: 1rem;
+        font-size: 0.7rem;
+      }
+    }
+    .arrowContainer {
+      //no change
+    }
+    .disclaimerContainer {
+      font-size: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .socialIconsContainer {
+      //no change
+    }
+  }
+}
+//for mid screens
+@media (min-width: 576px) and (max-width: 776px) {
+  .footerContainer {
+    .buttonContainer {
+      display: block;
+      align-items: center;
+      gap: 1rem;
+      .fa-brands {
+        //no change
+      }
+      button {
+        min-width: 12.5rem;
+        padding: 1rem;
+      }
+    }
+    .arrowContainer {
+      //no change
+    }
+    .disclaimerContainer {
+      font-size: 0.6rem;
+    }
+    .socialIconsContainer {
+      //no change
+    }
+  }
+}
+//for large screens
+@media (min-width: 776px) and (max-width: 1024px) {
+  .footerContainer {
+    .buttonContainer {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .fa-brands {
+        //no change
+      }
+      button {
+        min-width: 12.5rem;
+        padding: 1rem;
+      }
+    }
+    .arrowContainer {
+      //no change
+    }
+    .disclaimerContainer {
+      font-size: 0.5rem;
+    }
+    .socialIconsContainer {
+      //no change
+    }
+  }
+}
