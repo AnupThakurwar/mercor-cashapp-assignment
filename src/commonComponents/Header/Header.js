@@ -6,11 +6,7 @@ import eye from "../../Resources/Images/eyeButton.png";
 import "./Header.scss";
 import Navbar from "../Navbar/Navbar";
 
-const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  const menuHandler = () => {
-    setShowMenu(!showMenu);
-  };
+const Header = ({ showMenu, menuHandler }) => {
   return (
     <div className="headerContainer">
       <div className="logoContainer">

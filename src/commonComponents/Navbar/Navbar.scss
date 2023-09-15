@@ -12,6 +12,22 @@
       color: white;
       li {
         list-style-type: none;
+        position: relative;
+        cursor: pointer;
+      }
+      li::after {
+        position: absolute;
+        content: "";
+        height: 5px;
+        bottom: -5px;
+        left: 0%;
+        width: 0%;
+        background-color: var(--green);
+        transition: all 0.3s ease-out;
+      }
+      li:hover::after {
+        width: 100%;
+        cursor: pointer;
       }
     }
   }
@@ -25,6 +41,7 @@
       width: 58vw;
       .showMenu {
         display: block;
+        padding: 1rem;
       }
       .hideMenu {
         display: none;
@@ -59,6 +76,7 @@
       width: 72vw;
       .showMenu {
         display: block;
+        padding: 1rem;
       }
       .hideMenu {
         display: none;
@@ -93,6 +111,7 @@
       width: 85vw;
       .showMenu {
         display: block;
+        padding: 1rem;
       }
       .hideMenu {
         display: none;

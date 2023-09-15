@@ -198,7 +198,7 @@
           text-transform: uppercase;
           color: var(--white);
           z-index: 10;
-          font-size: 12rem;
+          font-size: 11rem;
           font-family: var(--Robota);
           font-weight: 900;
           top: 3rem;
@@ -206,14 +206,14 @@
         .mobile {
           position: absolute;
           z-index: 20;
-          transform: scale(0.5) rotate(25deg);
+          transform: scale(0.4) rotate(25deg);
         }
         .app {
           position: absolute;
           text-transform: uppercase;
           color: var(--white);
           z-index: 30;
-          font-size: 12rem;
+          font-size: 11rem;
           font-family: var(--Robota);
           font-weight: 700;
           bottom: 3rem;
@@ -274,25 +274,25 @@
           text-transform: uppercase;
           color: var(--white);
           z-index: 10;
-          font-size: 15rem;
+          font-size: 13rem;
           font-family: var(--Robota);
           font-weight: 900;
-          top: 0rem;
+          top: 2rem;
         }
         .mobile {
           position: absolute;
           z-index: 20;
-          transform: scale(0.5) rotate(25deg);
+          transform: scale(0.45) rotate(25deg);
         }
         .app {
           position: absolute;
           text-transform: uppercase;
           color: var(--white);
           z-index: 30;
-          font-size: 15rem;
+          font-size: 13rem;
           font-family: var(--Robota);
           font-weight: 700;
-          bottom: 0rem;
+          bottom: 2rem;
         }
       }
     }
